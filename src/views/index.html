@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <%- include ('partials/head.html') %>
+    <title><%= title %></title>
+  </head>
+  <body>
+    <%- include ('partials/header.html') %>
+    <main>
+      <div class="hero__image">
+        <section class="photo__content">
+          <img src="/assets/img/profile-pic.jpg" alt="MarioWeb" />
+        </section>
+        <section class="info__content">
+          <h1>
+            Hola, mi nombre es <span class="info-span">Mario</span> Martínez
+          </h1>
+          <p>
+            Soy programador front-end actualmente estudiante de ingenieria en
+            software & redes
+          </p>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et autem
+            voluptatem quidem? Incidunt non omnis labore. Quae sapiente debitis,
+            deleniti esse sit nobis qui repudiandae ipsa.
+          </p>
+          <a class="link-download" download href="">
+            <button class="info-button">Descargar CV</button>
+          </a>
+        </section>
+      </div>
+      <div class="skills-container">
+        <h2 class="title-sections">Skills</h2>
+        <section class="skills-content">
+          <div class="skills-skill">
+            <img src="/assets/img/post-1.png" alt="" />
+          </div>
+          <div class="skills-skill">
+            <img src="/assets/img/post-1.png" alt="" />
+          </div>
+          <div class="skills-skill">
+            <img src="/assets/img/post-1.png" alt="" />
+          </div>
+          <div class="skills-skill">
+            <img src="/assets/img/post-1.png" alt="" />
+          </div>
+          <div class="skills-skill">
+            <img src="/assets/img/post-1.png" alt="" />
+          </div>
+          <div class="skills-skill">
+            <img src="/assets/img/post-1.png" alt="" />
+          </div>
+        </section>
+      </div>
+    </main>
+    <%- include ('partials/footer.html')%> <%- include
+    ('partials/script.html')%>
+  </body>
+</html>
