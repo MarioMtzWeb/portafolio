@@ -1,1 +1,4 @@
-console.log('Hola mundo :D');
+import { buttonMenu } from "./button-header.js";
+
+
+buttonMenu('.btn-menu', '.header__nav', '.nav-item');
