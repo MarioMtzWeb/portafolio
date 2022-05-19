@@ -196,7 +196,7 @@ main {
 ------Css de page proyectos-------------
 */
 .projects-container {
-    max-width: 1000px;
+    max-width: 900px;
     margin-top: 2rem;
     margin-bottom: 5rem;
     margin-left: auto;
@@ -209,6 +209,45 @@ main {
 .card-project {
     position: relative;
 }
+.card-press {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6rem;
+    color: #fff5;
+    transition: all .3s ease;
+    animation-name: hoverPress;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.card-project:hover .card-press {
+    opacity: 0;
+}
+
+@keyframes hoverPress {
+    0% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(.95);
+    } 
+    50% {
+        transform: scale(1);
+    }
+    75% {
+        transform: scale(.95);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
 .container-hover {
     position: absolute;
     top: 0;
@@ -242,6 +281,94 @@ main {
 
 /*
 ------Fin de css page proyectos----------
+*/
+/*
+------Css page contacto----------
+*/
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 90vh;
+    padding: 1rem;
+    justify-content:center;
+    align-items: center;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    width: 100%;
+    padding: .3rem;
+}
+.contact-form label {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 1rem;
+    font-weight: bolder;
+}
+.contact-form input, textarea {
+    padding: .5rem;
+    outline: none;
+    font-family: sans-serif;
+    font-size: 1.1rem;
+    border-radius: 3px;
+    border: thin solid var(--primary-color);
+}
+.contact-form input[type="submit"]{
+    max-width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+}
+.contact-form textarea {
+    resize: none;
+}
+/*
+------Fin de css page contacto----------
+*/
+/*
+------Css page Blog----------
+*/
+.section-blog {
+    display: flex; 
+    flex-direction: column;
+    max-width: 500px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+}
+.card-post {
+    margin-bottom: 1rem;
+    padding: .5rem;
+    border-radius: 2px;
+    border: thin solid var(--primary-color);
+    /* box-shadow: 3px 3px 10px rgba(0,0,0, .2),
+    -3px -3px 10px rgba(0,0,0, .2); */
+    transition: all .3s ease;
+}
+.card-post:hover {
+    box-shadow: 5px 5px 10px rgba(0,0,0, .3);
+}
+.header-post {
+    text-align: start;
+}
+.header-post h3 {
+    margin: 0;
+}
+.footer-post {
+    text-align: end;
+}
+.btn-blog {
+    display: inline-block;
+    width: auto;
+    color: var(--primary-color);
+    text-decoration: none;
+} 
+/*
+------Fin de css page Blog----------
 */
 
 .footer {

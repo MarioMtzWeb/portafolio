@@ -6,9 +6,21 @@
 </head>
 <body>
     <%- include ('partials/header.html')%>
-    <h1>Contacto</h1>
-
-
+    <section class="contact-container">
+        <h2 class="title-sections">Contacto</h2>
+        <form action="" class="contact-form">
+            <label for="email">Correo:
+                <input placeholder="Correo:" type="email" name="email">
+            </label>
+            <label for="asunto">Asunto:
+                <input placeholder="Asunto:" type="text" name="asunto">
+            </label>
+            <label for="comments">Comentarios:
+            <textarea placeholder="Comentarios" name="comments" id="" cols="30" rows="10"></textarea>
+            </label>
+            <input type="submit" value="Enviar" class="info-button">
+        </form>
+    </section>
     <%- include ('partials/script.html')%>
 </body>
 </html>
