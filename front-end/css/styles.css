@@ -208,6 +208,11 @@ main {
 }
 .card-project {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
 }
 .card-press {
     position: absolute;
@@ -252,7 +257,12 @@ main {
     position: absolute;
     top: 0;
     left: 0;
+    right: 0;
+    bottom: 0;
     opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: #0005;
     color: #fff;
     transition: all .3s ease;
@@ -267,6 +277,7 @@ main {
 }
 .description-project p {
     margin: 0;
+    text-align: center;
     padding: .5rem;
 }
 
@@ -276,6 +287,7 @@ main {
     text-align: end;
 }
 .footer-card a {
+    font-size: 1.2rem;
     color: #fff;
 }
 
@@ -289,7 +301,6 @@ main {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 90vh;
     padding: 1rem;
     justify-content:center;
     align-items: center;
@@ -299,7 +310,7 @@ main {
     flex-direction: column;
     max-width: 500px;
     width: 100%;
-    padding: .3rem;
+    padding: 1rem;
 }
 .contact-form label {
     display: flex;
