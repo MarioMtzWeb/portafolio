@@ -30,7 +30,15 @@ const proyectos = [
         url: 'https://mariomtzweb.github.io/proyectos/portafolio/',
         repo:"https://github.com/MarioMtzWeb/proyectos",
         img: 'imagen-de-proyecto.jpj'
-    },    
+    },
+    {
+        id: 5,
+        name: 'App pokédex',
+        description: 'Proyecto usando api de PokéApi',
+        url: 'https://github.com/MarioMtzWeb/poke-api/',
+        repo:"https://github.com/MarioMtzWeb/poke-api",
+        img: 'imagen-de-proyecto.jpj'
+    },  
 ]
 
 export default proyectos;
