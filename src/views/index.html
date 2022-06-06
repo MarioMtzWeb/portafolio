@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <%- include ('partials/head.html') %>
+    <title><%= title %></title>
+  </head>
+  <body>
+    <%- include ('partials/header.html') %>
+    <main>
+      <div class="hero__image">
+        <section class="photo__content">
+          <img src="/assets/img/profile-pic.jpg" alt="MarioWeb" />
+        </section>
+        <section class="info__content">
+          <h1>
+            Hola, mi nombre es <span class="info-span">Mario</span> Martínez
+          </h1>
+          <p>
+            Soy programador front-end actualmente estudiante de ingenieria en
+            software & redes en 6to Cuatrimestre.
+          </p>
+          <p>
+            Actualmente me encuentro mejorando mis habilidades para mejorar en el 
+            desarrollo y diseño web, he realizado proyectos propios y para terceros
+            los encontraras en la sección de proyectos.
+            Si gustas saber más de mi historia laboral te invito que descarges mi CV 
+            dandole clic al boton de abajo. 😋
+          </p>
+          <a class="link-download" download href="assets/MarioMartinezCV.pdf">
+            <button class="info-button">Descargar CV</button>
+          </a>
+        </section>
+      </div>
+      <div class="skills-container">
+        <h2 class="title-sections">Skills</h2>
+        <section class="skills-content">
+          <div class="skills-skill">
+            <i class="fa-brands fa-html5"></i>
+          </div>
+          <div class="skills-skill">
+            <i class="fa-brands fa-css3-alt"></i>
+          </div>
+          <div class="skills-skill">
+            <i class="fa-brands fa-js"></i>
+          </div>
+          <div class="skills-skill">
+            <i class="fa-brands fa-react"></i>
+          </div>
+          <div class="skills-skill">
+            <i class="fa-brands fa-node"></i>
+          </div>
+          <div class="skills-skill">
+            <i class="fa-brands fa-git-alt"></i>
+          </div>
+          <div class="skills-skill">
+            <i class="fa-brands fa-npm"></i>
+          </div>
+        </section>
+      </div>
+    </main>
+    <%- include ('partials/footer.html')%> <%- include
+    ('partials/script.html')%>
+  </body>
+</html>

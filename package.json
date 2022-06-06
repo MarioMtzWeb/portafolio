@@ -1,0 +1,21 @@
+{
+  "name": "blog-express",
+  "version": "1.0.0",
+  "description": "\"\"\u001b[DBlog con express\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src",
+    "dev": "nodemon src"
+  },
+  "author": "\"\"\u001b[DMario Martinez\" <themarswtf@outlook.es>",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
